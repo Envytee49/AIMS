@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.view.media.HomeScreenController">
+   <top>
+       <fx:include source="../Navigation.fxml" />
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="498.0" prefWidth="826.0">
+               <children>
+                  <StackPane fx:id="homeStackpane" prefHeight="558.0" prefWidth="983.0">
+                     <children>
+                        <ScrollPane id="homeScrollPane" fx:id="homeScrollpane" prefHeight="494.0" prefWidth="801.0" style="-fx-background-color: white;" stylesheets="@../../css/style.css" />
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: transparent black;" BorderPane.alignment="CENTER">
+         <children>
+            <fx:include source="PriceFilter.fxml" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.view.user.admin.UpdateUserScreenController">
+   <center>
+      <TableView fx:id="userTable" prefHeight="498.0" prefWidth="1295.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="28.000000774860382" text="ID" />
+          <TableColumn fx:id="name" prefWidth="105.60000228881836" text="name" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="129.6000518798828" text="email" />
+            <TableColumn fx:id="address" minWidth="1.60003662109375" prefWidth="117.59991455078125" text="address" />
+            <TableColumn fx:id="phone" minWidth="0.0" prefWidth="98.4000244140625" text="phone" />
+            <TableColumn fx:id="role" minWidth="0.0" prefWidth="105.60003662109375" text="role" />
+            <TableColumn fx:id="status" prefWidth="120.0" text="status" />
+            <TableColumn fx:id="username" maxWidth="234.4000244140625" prefWidth="114.39996337890625" text="username" />
+            <TableColumn fx:id="action" maxWidth="530.4000244140625" minWidth="30.0" prefWidth="376.0" text="action" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+       <AnchorPane id="headerBar" maxHeight="80.0" maxWidth="1000.0" prefHeight="80.0" prefWidth="1000.0" style="-fx-border-color: transparent transparent black transparent; -fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <HBox prefHeight="100.0" prefWidth="1200.0">
+                   <children>
+                       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="248.0">
+                           <children>
+                               <Button id="homeButton" mnemonicParsing="false" prefHeight="68.0" prefWidth="209.0" style="-fx-text-fill: #21b5dd; -fx-background-color: transaparent;" text="AIMS">
+                                   <font>
+                                       <Font name="System Bold" size="30.0" />
+                                   </font>
+                               </Button>
+                           </children>
+                       </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="810.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #21b5dd; -fx-background-radius: 10%;" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#addUser" style="-fx-background-color: #21b5dd; -fx-text-fill: white;" text="ADD USER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#changePassword" style="-fx-background-color: #21b5dd; -fx-text-fill: white;" text="CHANGE PASSWORD">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+
+                       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="223.0">
+                           <children>
+                               <Button mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #21b5dd; -fx-text-fill: white;" text="LOGOUT">
+                                   <font>
+                                       <Font name="System Bold" size="14.0" />
+                                   </font>
+                               </Button>
+                           </children>
+                       </HBox>
+                   </children>
+               </HBox>
+           </children>
+       </AnchorPane>
+   </top>
+</BorderPane>

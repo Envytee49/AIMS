@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.view.delivery.RushOrderScreenController">
+
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="400.0">
+                    <children>
+                        <HBox prefHeight="27.0" prefWidth="400.0" />
+                        <HBox prefHeight="268.0" prefWidth="400.0">
+                            <children>
+                                <VBox prefHeight="100.0" prefWidth="40.0" />
+                                <VBox prefHeight="375.0" prefWidth="129.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Province/City" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                                            </children>
+                                        </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Time" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery instruction" />
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="230.0" prefWidth="214.0">
+                                    <children>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                    <Text fx:id="nameTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            </children></HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="174.0">
+                                            <children>
+                                    <Text fx:id="phoneTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="173.0">
+                                            <children>
+                                    <Text fx:id="provinceTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                    <Text fx:id="addressTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                    <Text fx:id="emailTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            </children>
+                                        </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ComboBox fx:id="deliveryTime" prefHeight="26.0" prefWidth="215.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea fx:id="deliveryInstruction" prefHeight="38.0" prefWidth="224.0" />
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="400.0">
+                            <children>
+                                <VBox prefHeight="100.0" prefWidth="40.0" />
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order Summary">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="133.0" prefWidth="400.0">
+                            <children>
+                                <VBox prefHeight="100.0" prefWidth="40.0" />
+                                <VBox prefHeight="375.0" prefWidth="129.0">
+                                    <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal" />
+                                 </children>
+                              </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery fee" />
+                                            </children>
+                                        </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rush Delivery Fee" />
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="230.0" prefWidth="214.0">
+                                    <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="subtotal" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="deliveryFeeTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            </children>
+                                        </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="rushDeliveryFeeTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                            <children>
+                                <Button id="placeOrderButton" mnemonicParsing="false" onAction="#requestPayOrder" stylesheets="@../../css/style.css" text="Confirm" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            <VBox prefHeight="500.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="138.0" style="-fx-border-color: transparent transparent black transparent;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="175.0" style="-fx-border-color: transparent black transparent black;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Product" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="140.0" style="-fx-border-color: transparent black transparent transparent;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Price" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="50.0" style="-fx-border-color: transparent black transparent transparent;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="140.0" style="-fx-border-color: transparent black transparent transparent;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price" textAlignment="CENTER" wrappingWidth="85.30078125" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="98.0" style="-fx-border-color: transparent black transparent transparent;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rush &#10;order" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <ScrollPane prefHeight="456.0" prefWidth="572.0" style="-fx-background-color: white;">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: white;">
+                           <children>
+                              <FlowPane fx:id="rushFlowpane" prefWrapLength="572.0" style="-fx-background-color: white;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+    </center>
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: transparent transparent black transparent;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="98.0" prefWidth="34.0" />
+                <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/payment.png" />
+                    </image>
+                </ImageView>
+                <Pane prefHeight="41.0" prefWidth="10.0" />
+                <Text fill="#21b5dd" strokeType="OUTSIDE" strokeWidth="0.0" text="Rush Delivery Information" wrappingWidth="396.9734344482422">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Text>
+                <Pane prefHeight="98.0" prefWidth="458.0" />
+                <Button fx:id="backBtn" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/back-icon2.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>

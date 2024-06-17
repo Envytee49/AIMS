@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.view.payment.PaymentScreenController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: white; -fx-border-color: transparent transparent black transparent;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="48.0" prefWidth="41.0" />
+            <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/payment.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="41.0" prefWidth="10.0" />
+            <Text fill="#21b5dd" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="PAYMENT" wrappingWidth="149.7734375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <WebView fx:id="webView" prefHeight="498.0" prefWidth="1200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

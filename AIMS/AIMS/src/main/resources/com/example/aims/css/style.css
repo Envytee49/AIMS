@@ -1,0 +1,57 @@
+#homeButton, #searchButton, #cartButton {
+    -fx-background-color: transparent;
+
+}
+
+#headerBar {
+    -fx-background-color: white;
+}
+
+#placeOrderButton, #deliveryConfirm {
+    -fx-background-color: #21b5dd;
+    -fx-text-fill: white;
+    -fx-padding: 10px 100px;
+}
+
+#searchButton:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 50%;
+    -fx-cursor: pointer;
+}
+
+#addToCartBtn {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding:  10px 0 ;
+    -fx-background-color:#21b5dd;
+    -fx-pref-width: 200px;
+}
+#addToCartBtn:hover, #scroll-to-top-btn:hover {
+    -fx-background-color:#3ccef5;
+    -fx-cursor: pointer;
+}
+#homeScrollPane {
+    -fx-translate-y: smooth;
+}
+#media-image:hover {
+    -fx-cursor: pointer;
+}
+#scroll-to-top-btn {
+    -fx-background-color: #21b5dd;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 50%;
+    -fx-font-size: 14px;
+}
+#spinner {
+    -fx-pref-width: 200px;
+}
+#title {
+    -fx-text-fill: #007185;
+}
+#price {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+

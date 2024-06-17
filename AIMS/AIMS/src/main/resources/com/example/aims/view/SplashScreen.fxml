@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.view.SplashScreenController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="1000.0">
+            <children>
+            <HBox alignment="CENTER" layoutY="194.0" prefHeight="150.0" prefWidth="1000.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                                  <ImageView fx:id="logo" fitHeight="152.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@../assets/Logo.png" />
+                                      </image>
+                                  </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                                  <Label prefHeight="62.0" prefWidth="102.0" text="AIMS" textAlignment="CENTER" textFill="#5091e6">
+                                      <font>
+                                          <Font name="Segoe UI Semibold" size="42.0" />
+                                      </font>
+                                  </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
