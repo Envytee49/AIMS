@@ -8,7 +8,7 @@
 - AIMS Project: A desktop e-commerce application designed for ease of use and functionality.
 - Product Managers: Add, view, edit, or delete products and manage user orders.
 - Administrators: Add, view, edit, or delete users, and manage user role and account statuses.
-- Customers: Browse products, add items to the cart, place orders, and make payments via VNPA
+- Customers: Browse products, add items to the cart, place orders, and make payments via VNPAY
 ## How to run
 
 1. Download [MySQL](https://dev.mysql.com/downloads/installer/) (mysql-installer-community-8.0.37.0.msi)
